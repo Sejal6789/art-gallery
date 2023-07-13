@@ -9,6 +9,18 @@ body {
     padding: 0%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040404;
+    position: sticky;
+    padding: 0.5rem 2rem;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
 .box {
     width: 12%;
     height: 75%;
@@ -20,6 +32,19 @@ body {
 .box:hover {
     transform: scale(1.15);
     opacity: 0.97;
+}
+
+button {
+    border-radius: 2px;
+    background: transparent;
+    margin: 195% auto 0% 19%;
+    padding: 1.4% 9.2%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    outline: 0px;
+    border: 1px white solid;
+    cursor: pointer;
 }
 
 #box-1 {
@@ -71,7 +96,7 @@ body {
     height: 200px;
 }
 
-#box-7 {
+#box-8 {
     background-image: url(images/art-8.jpg);
     background-position: center;
     background-size: cover;
@@ -79,6 +104,41 @@ body {
 }
 
 @media screen and (max-width:415px) {
+    /* *********PAGE-1********** */
+    .homepage h2 {
+        font-size: 3.5rem;
+    }
+    .homepage h3 {
+        font-size: 2.5rem;
+    }
+    .homepage h4 {
+        font-size: 2.5rem;
+    }
+    .homepage {
+        padding: 7rem 2rem;
+        height: 27.5rem;
+        margin-bottom: 19%;
+    }
+    /* ************NAVIGATION BAR********* */
+    .logo {
+        font-size: 308%;
+        padding: 1% 0% 10% 0%;
+        margin-left: -14px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 0.9rem;
+        text-align: center;
+        margin-top: -19%;
+        padding-top: 7%;
+        padding-bottom: 8.6%;
+        position: relative;
+    }
+    nav .link a {
+        font-size: 20px;
+        padding-left: -5%;
+    }
+    /* **********PAGE-2 FLEX-ITEM*********** */
     .box {
         width: 25%;
         height: 40%;
@@ -86,4 +146,17 @@ body {
     button {
         margin: 195% 3% 2% 5%;
     }
+    /* **************PAGE-3***************** */
+    .contact-item {
+        margin: 8% 1% 1% 1%;
+    }
+    /* *************FOOTER************* */
+    footer {
+        margin-top: 105%;
+    }
+    footer h2 {
+        margin-top: 4%;
+        float: none;
+    }
+    /* BUILD & DESIGNED BY LOUIS BARSIWAL  */
 }
